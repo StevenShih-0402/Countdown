@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滴答滴答</title>
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="icon" href="D:\Javascript\HTML+CSS\sideproject\CSS作品彙整\LOGO.png" type="image/png">
+</head>
+<body>
+    <div class="center">
+        <div class="title">
+            CountDown!
+        </div>
+        <form id="choose">
+            <div class="timecode">
+                <input type="date" name="date" id="date"/>
+                <input type="time" name="time" id="time"/>
+            </div>
+            <div class="button">
+                <input type="submit" value="GO!" id="go"/>
+                <input type="submit" value="STOP" id="stop"/>
+            </div>           
+        </form>
+        
+        <div id="information">
+            <div>DeadLine</div>
+            <span id="deadline"></span>
+        </div>
+
+        <div class="time">
+            <div class="timebox">
+                <span class="year" id="year">00</span>
+                Years
+            </div>
+            <div class="timebox">
+                <span class="day" id="day">00</span>
+                Days
+            </div>
+            <div class="timebox">
+                <span class="hour" id="hour">00</span>
+                Hours
+            </div>
+            <div class="timebox">
+                <span class="minute" id="minute">00</span>
+                Minutes
+            </div>
+            <div class="timebox">
+                <span class="second" id="second">00</span>
+                Seconds
+            </div>
+        </div>
+    </div>
+    
+
+    <audio src="mamarazzi_-_casual_tease.mp3" id="music" loop></audio>
+
+    <script src="countdown.js"></script>
+</body>
+</html>
